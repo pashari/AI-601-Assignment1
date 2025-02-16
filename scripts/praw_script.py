@@ -1,6 +1,7 @@
 import praw
 import csv
 from datetime import datetime
+import pandas as pd
 
 #creating instance of reddit
 reddit = praw.Reddit(
@@ -47,3 +48,4 @@ def getTopPosts(no_of_posts, keywords):
 
 
 getTopPosts(100, ["cricket", "Pakistan vs India match", "cricket betting trends", "T20 world cup", "Champions Trophy", "ICC World Cup", "cricket sponsorships"])
+
